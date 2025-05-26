@@ -1,4 +1,4 @@
-# Wprowadzone zmiany w grze:
+# Wprowadzone zmiany w grze
 - Gdy asteroida zostanie trafiona, a nie jest to najmniejszy jej rozmiar, tworzy ona dwie nowe, mniejsze asteroidy.
 - Zastąpiony wygląd asteroid - zamiast trójkątów wprowadzono rzeczywisty wygląd asteroid w postaci zdjęcia.
 - Za zniszczenie asteroidy gracz otrzymuje nagrodę w postaci 1 odzyskanego punktu życia (+1 HP).
@@ -10,6 +10,5 @@
 - Ekran "Game Over".
 
 # Filmik przedstawiający krótką rozgrywkę
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Mc6mXgKcc0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+https://github.com/user-attachments/assets/ffa7dd9e-9c8a-4c52-9fa1-7a29eeb3f391
 
