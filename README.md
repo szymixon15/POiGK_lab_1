@@ -9,6 +9,13 @@
 - Dynamiczna zmiana koloru: W scenie 0 dodałem efekt zmiany koloru dla albedo i refractionColor kul, który jest zależny od czasu (FrameIndex * 0.02f) oraz indeksu kuli (sphereIndex * 0.5f dla przesunięcia fazowego). Użyłem funkcji sin i cos z różnymi przesunięciami fazowymi dla każdej składowej RGB, aby stworzyć płynne przejścia kolorystyczne:
   - albedo: Kolory oscylują w zakresie [0, 1] dla każdej składowej RGB, tworząc efekt pulsowania między różnymi odcieniami.
   - refractionColor: Kolory absorpcji zmieniają się w synchronizacji z albedo, ale są dodatkowo modulowane przez progress, aby zachować oryginalną ideę zróżnicowania absorpcji wzdłuż linii kul.
+- Dynamiczna zmiana rozmiaru kul: Dodałem efekt pulsowania rozmiaru kul w scenie 0, zmieniając promień (radius) każdej kuli w funkcji TestSphereTrace. Promień oscyluje między 2.0 a 3.6 (bazowy promień 2.8 ± 0.8) w zależności od czasu (FrameIndex * 0.02f) i indeksu kuli (sphereIndex * 0.7f). Użyłem funkcji sin z przesunięciem fazowym dla każdej kuli, aby efekt był zróżnicowany.
+  - Wzór: radius = 2.8f + 0.8f * sin(time + float(sphereIndex) * 0.7f)
+  - Efekt wizualny: Kule będą się powiększać i zmniejszać, tworząc wrażenie "oddychania", co jest bardzo zauważalne, zwłaszcza w połączeniu z ruchem (motionOffset), zmianą kolorów i emisją światła.
+  - 
+# Efekt końcowy
+Kule teraz pulsują rozmiarem, zmieniają kolory, delikatnie się poruszają i emitują światło, co sprawia, że scena jest bardzo dynamiczna i przyciąga wzrok. Szachownica na podłodze dodatkowo podkreśla efekty świetlne dzięki delikatnej 
+refleksyjności. Tło sceny może odbijać się od kul, wzmacniając efekt lustrzanych odbić i dodając głębi wizualnej.
 
 # Filmik przedstawiający krótką wizualizacje
 
