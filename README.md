@@ -19,4 +19,5 @@ refleksyjności. Tło sceny może odbijać się od kul, wzmacniając efekt lustr
 
 # Filmik przedstawiający krótką wizualizacje
 
+https://github.com/user-attachments/assets/70638f7e-7b1d-494e-810a-84cddd805d49
 
